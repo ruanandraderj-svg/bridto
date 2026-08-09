@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRIØ dpto. — Departamento Criativo</title>
+  <meta name="description" content="Departamento criativo especializado em peças personalizadas com estampas exclusivas. DTF premium com produção em até 10 dias úteis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <img src="assets/brio_logo.png" alt="BRIØ dpto." class="brand-logo-img nav-logo-img" />
+    </a>
+    <div class="nav-links">
+      <a href="#colecao" class="nav-link">Coleção</a>
+      <a href="#studio" class="nav-link">Studio</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#contato" class="nav-link nav-cta">Encomendar</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#colecao" class="mobile-link">Coleção</a>
+    <a href="#studio" class="mobile-link">Studio</a>
+    <a href="#sobre" class="mobile-link">Sobre</a>
+    <a href="#contato" class="mobile-link">Encomendar</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-label reveal">Departamento Criativo — PE</div>
+      <div class="hero-logo-wrap reveal">
+        <img src="assets/brio_logo.png" alt="BRIØ dpto." class="brand-logo-img hero-official-logo" />
+      </div>
+      <p class="hero-sub reveal">Sua estampa. Sua peça. Sua identidade.</p>
+      <div class="hero-actions reveal">
+        <a href="#studio" class="btn btn-primary">Criar minha peça</a>
+        <a href="#colecao" class="btn btn-ghost">Ver coleção</a>
+      </div>
+    </div>
+
+    <!-- Hero Visual Animation with Real Black Shirt -->
+    <div class="hero-visual" id="heroVisual">
+      <div class="hero-shirt-container" id="heroShirtContainer">
+        <div class="hero-shirt-shadow"></div>
+        <img src="assets/hero_black_shirt.png" alt="Camiseta Preta Oversized" class="hero-shirt-img" id="heroShirtImg" />
+        <canvas id="shirtPrintCanvas" class="shirt-print-canvas"></canvas>
+
+        <!-- Floating Editorial Tech Specs -->
+        <div class="hero-badge badge-top-right">
+          <span class="badge-line"></span>
+          <span class="badge-text">[ IMPRESSÃO DTF HD ]</span>
+        </div>
+        <div class="hero-badge badge-middle-left">
+          <span class="badge-line"></span>
+          <span class="badge-text">[ 100% ALGODÃO 260G ]</span>
+        </div>
+        <div class="hero-badge badge-bottom-right">
+          <span class="badge-line"></span>
+          <span class="badge-text">[ OVERSIZED FIT ]</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <!-- Set 1 -->
+        <span>DEPARTAMENTO CRIATIVO</span><span>·</span><span>DTF PREMIUM</span><span>·</span><span>PERSONALIZADO</span><span>·</span><span>10 DIAS ÚTEIS</span><span>·</span><span>BRIØ DPTO.</span><span>·</span>
+        <span>DEPARTAMENTO CRIATIVO</span><span>·</span><span>DTF PREMIUM</span><span>·</span><span>PERSONALIZADO</span><span>·</span><span>10 DIAS ÚTEIS</span><span>·</span><span>BRIØ DPTO.</span><span>·</span>
+        <!-- Set 2 (Exact Duplicate for Seamless Loop) -->
+        <span>DEPARTAMENTO CRIATIVO</span><span>·</span><span>DTF PREMIUM</span><span>·</span><span>PERSONALIZADO</span><span>·</span><span>10 DIAS ÚTEIS</span><span>·</span><span>BRIØ DPTO.</span><span>·</span>
+        <span>DEPARTAMENTO CRIATIVO</span><span>·</span><span>DTF PREMIUM</span><span>·</span><span>PERSONALIZADO</span><span>·</span><span>10 DIAS ÚTEIS</span><span>·</span><span>BRIØ DPTO.</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="colecao" id="colecao">
+    <div class="section-header reveal">
+      <span class="section-tag">— Coleção</span>
+      <h2 class="section-title">Peças em<br/><em>destaque</em></h2>
+    </div>
+
+    <div class="colecao-grid">
+      <div class="produto-card reveal" data-delay="0">
+        <div class="produto-img-wrap">
+          <img src="assets/shirt1.png" alt="Camiseta Oversized Geométrica" loading="lazy" />
+          <div class="produto-overlay">
+            <span class="produto-overlay-tag">Camiseta Oversized</span>
+            <a href="#studio" class="produto-overlay-cta">Personalizar →</a>
+          </div>
+        </div>
+        <div class="produto-info">
+          <h3>Modelo Geométrico</h3>
+          <p>Camiseta oversized com estampa exclusiva</p>
+        </div>
+      </div>
+
+      <div class="produto-card produto-card--featured reveal" data-delay="100">
+        <div class="produto-img-wrap">
+          <img src="assets/shirt2.png" alt="Camiseta Preta Editorial" loading="lazy" />
+          <div class="produto-overlay">
+            <span class="produto-overlay-tag">Camiseta Preta</span>
+            <a href="#studio" class="produto-overlay-cta">Personalizar →</a>
+          </div>
+        </div>
+        <div class="produto-info">
+          <h3>Modelo Editorial</h3>
+          <p>Drop premium — estampa bold impact</p>
+        </div>
+      </div>
+
+      <div class="produto-card reveal" data-delay="200">
+        <div class="produto-img-wrap">
+          <img src="assets/hoodie1.png" alt="Moletom Oversized Verde-Oliva" loading="lazy" />
+          <div class="produto-overlay">
+            <span class="produto-overlay-tag">Moletom Oversized</span>
+            <a href="#studio" class="produto-overlay-cta">Personalizar →</a>
+          </div>
+        </div>
+        <div class="produto-info">
+          <h3>Moletom Oliva</h3>
+          <p>Estampa line art sobre verde-musgo</p>
+        </div>
+      </div>
+
+      <div class="produto-card reveal" data-delay="300">
+        <div class="produto-img-wrap">
+          <img src="assets/shirt3.png" alt="Camisa Jacket Estampada" loading="lazy" />
+          <div class="produto-overlay">
+            <span class="produto-overlay-tag">Camisa Jacket</span>
+            <a href="#studio" class="produto-overlay-cta">Personalizar →</a>
+          </div>
+        </div>
+        <div class="produto-info">
+          <h3>Jacket Botânico</h3>
+          <p>Peça aberta com ilustração artesanal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Banner -->
+  <section class="processo">
+    <div class="processo-inner">
+      <div class="processo-item reveal">
+        <span class="processo-num">01</span>
+        <h4>Envie sua arte</h4>
+        <p>Upload da sua imagem, logo ou ideia no Studio abaixo</p>
+      </div>
+      <div class="processo-divider"></div>
+      <div class="processo-item reveal" data-delay="100">
+        <span class="processo-num">02</span>
+        <h4>Escolha a peça</h4>
+        <p>Camiseta, moletom, casaco ou jaqueta — você decide</p>
+      </div>
+      <div class="processo-divider"></div>
+      <div class="processo-item reveal" data-delay="200">
+        <span class="processo-num">03</span>
+        <h4>DTF Premium</h4>
+        <p>Produzimos com tecnologia DTF de alta fixação e durabilidade</p>
+      </div>
+      <div class="processo-divider"></div>
+      <div class="processo-item reveal" data-delay="300">
+        <span class="processo-num">04</span>
+        <h4>Entrega em 10 dias</h4>
+        <p>Sua peça única nas suas mãos em até 10 dias úteis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Section -->
+  <section class="studio" id="studio">
+    <div class="studio-header reveal">
+      <span class="section-tag">— Studio</span>
+      <h2 class="section-title">Crie sua<br/><em>própria peça</em></h2>
+      <p class="studio-desc">Faça upload da sua arte, escolha o modelo e a cor da peça. Visualize em tempo real antes de encomendar.</p>
+    </div>
+
+    <div class="studio-container">
+      <!-- Preview Side -->
+      <div class="studio-preview reveal">
+        <!-- View Toggle Bar (Frente / Verso) -->
+        <div class="view-toggle-bar">
+          <button class="view-toggle-btn active" data-view="front" id="viewBtnFront">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+            <span>Frente</span>
+          </button>
+          <button class="view-toggle-btn" data-view="back" id="viewBtnBack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+            <span>Verso</span>
+          </button>
+        </div>
+
+        <div class="studio-canvas-wrap">
+          <canvas id="studioCanvas" width="500" height="600"></canvas>
+          <div class="canvas-drag-badge" id="dragBadge">
+            <span>🖐️ Clique e arraste a estampa para posicionar</span>
+          </div>
+          <div class="studio-canvas-hint" id="canvasHint">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <span>Faça upload da sua arte para visualizar</span>
+          </div>
+        </div>
+
+        <div class="studio-controls">
+          <div class="control-header">
+            <label class="control-label">Ajuste da Estampa</label>
+            <span class="view-indicator" id="viewIndicator">Visão: FRENTE</span>
+          </div>
+          <div class="control-row">
+            <button class="pos-preset-btn" id="btnCenterStamp" type="button">🎯 Centralizar</button>
+            <button class="pos-preset-btn" id="btnChestStamp" type="button">📌 Peito</button>
+            <button class="pos-preset-btn" id="btnResetStamp" type="button">🔄 Resetar</button>
+          </div>
+          <div class="control-sliders">
+            <div class="slider-group">
+              <label>Tamanho: <span id="sizeValDisplay">40%</span></label>
+              <input type="range" id="stampSize" min="10" max="85" value="40" class="studio-range" />
+            </div>
+            <div class="slider-group">
+              <label>Rotação: <span id="rotValDisplay">0°</span></label>
+              <input type="range" id="stampRotate" min="-180" max="180" value="0" class="studio-range" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Config Side -->
+      <div class="studio-config reveal" data-delay="150">
+        <!-- Step 1: Peça -->
+        <div class="config-step">
+          <h3 class="config-step-title"><span>1</span> Escolha a peça</h3>
+          <div class="peca-grid">
+            <button class="peca-btn active" data-peca="camiseta" id="pecaBtn_camiseta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+              <span>Camiseta</span>
+            </button>
+            <button class="peca-btn" data-peca="moletom" id="pecaBtn_moletom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/><rect x="6" y="10" width="12" height="2" rx="0.5"/></svg>
+              <span>Moletom</span>
+            </button>
+            <button class="peca-btn" data-peca="casaco" id="pecaBtn_casaco">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/><line x1="12" y1="10" x2="12" y2="22"/></svg>
+              <span>Casaco</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Cor -->
+        <div class="config-step">
+          <h3 class="config-step-title"><span>2</span> Cor da peça</h3>
+          <div class="cor-grid">
+            <button class="cor-btn active" data-cor="#F2EFE8" data-name="Off-White" style="background:#F2EFE8;" title="Off-White"></button>
+            <button class="cor-btn" data-cor="#1A1A18" data-name="Preto" style="background:#1A1A18;" title="Preto"></button>
+            <button class="cor-btn" data-cor="#4A5240" data-name="Verde Oliva" style="background:#4A5240;" title="Verde Oliva"></button>
+            <button class="cor-btn" data-cor="#8B7355" data-name="Caramelo" style="background:#8B7755;" title="Caramelo"></button>
+            <button class="cor-btn" data-cor="#C8C5BE" data-name="Cinza Claro" style="background:#C8C5BE;" title="Cinza Claro"></button>
+            <button class="cor-btn" data-cor="#2C2C2C" data-name="Grafite" style="background:#2C2C2C;" title="Grafite"></button>
+          </div>
+          <div class="cor-selected-name" id="corName">Off-White</div>
+        </div>
+
+        <!-- Step 3: Arte -->
+        <div class="config-step">
+          <h3 class="config-step-title"><span>3</span> Suas estampas</h3>
+          <!-- Side Art Selection Tabs -->
+          <div class="art-side-tabs">
+            <button class="art-tab-btn active" data-side="front" id="artTabFront">Estampa Frente</button>
+            <button class="art-tab-btn" data-side="back" id="artTabBack">Estampa Verso</button>
+          </div>
+
+          <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*" hidden />
+            <div class="upload-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <p class="upload-title" id="uploadTitle">Enviar estampa para a FRENTE</p>
+            <p class="upload-sub">PNG, JPG, SVG · Máx. 10MB · Fundo transparente recomendado</p>
+            <button class="upload-btn" id="uploadBtn" type="button">Selecionar arquivo</button>
+          </div>
+          <div class="upload-preview" id="uploadPreview" style="display:none;">
+            <img id="uploadThumb" alt="Sua arte" />
+            <div class="upload-preview-info">
+              <span id="uploadFileName">arte.png</span>
+              <span class="upload-side-tag" id="uploadSideTag">FRENTE</span>
+              <button class="upload-remove" id="uploadRemove" type="button">✕ Remover</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Tamanho/Obs -->
+        <div class="config-step">
+          <h3 class="config-step-title"><span>4</span> Detalhes do pedido</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tamanho</label>
+              <select id="tamSelect">
+                <option>P</option>
+                <option selected>M</option>
+                <option>G</option>
+                <option>GG</option>
+                <option>XGG</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quantidade</label>
+              <div class="qty-control">
+                <button class="qty-btn" id="qtyMinus">−</button>
+                <span id="qtyValue">1</span>
+                <button class="qty-btn" id="qtyPlus">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Observações (opcional)</label>
+            <textarea id="obsInput" rows="3" placeholder="Ex.: quero a estampa nas costas, cor da estampa: branco..."></textarea>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <button class="studio-submit" id="studioSubmit">
+          <span>Encomendar via WhatsApp</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.847L0 24l6.335-1.513A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.95 0-3.77-.524-5.333-1.437l-.383-.228-3.762.898.944-3.658-.249-.396A9.796 9.796 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+        </button>
+        <p class="studio-disclaimer">Você será direcionado ao WhatsApp com os detalhes do pedido. Responderemos em até 24h.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-inner">
+      <div class="sobre-text reveal">
+        <span class="section-tag">— Sobre</span>
+        <h2 class="sobre-title">Não somos só<br/>uma marca de<br/><em>camisetas.</em></h2>
+        <p>Somos um departamento criativo. Trabalhamos com quem quer transformar uma ideia — uma foto, um traço, uma referência — em uma peça real.</p>
+        <p>Produção DTF premium, acabamento profissional, estampas que duram. Cada peça é única, feita para você.</p>
+        <div class="sobre-tags">
+          <span>DTF Premium</span>
+          <span>Camisetas</span>
+          <span>Moletons</span>
+          <span>Casacos</span>
+          <span>Jaquetas</span>
+          <span>10 dias úteis</span>
+        </div>
+      </div>
+      <div class="sobre-visual reveal" data-delay="150">
+        <div class="sobre-img-stack">
+          <img src="assets/shirt1.png" class="stack-img stack-img--back" alt="" />
+          <img src="assets/hoodie1.png" class="stack-img stack-img--front" alt="" />
+        </div>
+        <div class="sobre-stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Personalizado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial / CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-marquee">
+      <div class="marquee-track marquee-track--reverse">
+        <span>Sua estampa</span>
+        <span>✦</span>
+        <span>Sua identidade</span>
+        <span>✦</span>
+        <span>Sua peça</span>
+        <span>✦</span>
+        <span>Departamento Criativo</span>
+        <span>✦</span>
+        <span>BRIØ</span>
+        <span>✦</span>
+        <span>Sua estampa</span>
+        <span>✦</span>
+        <span>Sua identidade</span>
+        <span>✦</span>
+        <span>Sua peça</span>
+        <span>✦</span>
+        <span>Departamento Criativo</span>
+        <span>✦</span>
+        <span>BRIØ</span>
+        <span>✦</span>
+      </div>
+    </div>
+    <div class="cta-content reveal">
+      <h2>Pronto para criar<br/><em>sua peça?</em></h2>
+      <a href="#studio" class="btn btn-primary btn-large">Ir para o Studio →</a>
+    </div>
+  </section>
+
+  <!-- Footer / Contato -->
+  <footer class="footer" id="contato">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/brio_logo.png" alt="BRIØ dpto." class="brand-logo-img footer-logo-img" />
+        </div>
+        <p>departamento criativo</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/briodpto.pe" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/559900000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.847L0 24l6.335-1.513A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.95 0-3.77-.524-5.333-1.437l-.383-.228-3.762.898.944-3.658-.249-.396A9.796 9.796 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#colecao">Coleção</a>
+        <a href="#studio">Studio</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Pernambuco, PE</p>
+        <a href="https://wa.me/559900000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/briodpto.pe" target="_blank" rel="noopener">@briodpto.pe</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 BRIØ dpto. Todos os direitos reservados.</span>
+      <span>Departamento Criativo — Pernambuco</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

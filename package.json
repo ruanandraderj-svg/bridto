@@ -1,0 +1,13 @@
+{
+  "name": "brio-dpto",
+  "version": "1.0.0",
+  "description": "Site oficial BRIØ dpto. — Departamento Criativo",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site ready'"
+  },
+  "keywords": ["brio-dpto", "streetwear", "fashion"],
+  "author": "BRIØ dpto.",
+  "license": "MIT"
+}

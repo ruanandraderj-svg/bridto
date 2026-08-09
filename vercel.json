@@ -2,6 +2,7 @@
   "version": 2,
   "name": "brio-dpto",
   "cleanUrls": true,
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/assets/(.*)",
